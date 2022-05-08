@@ -1,26 +1,26 @@
 	 ORG 800H  
 ;---TITLE------------------------------------ 
-	 LXI H,TYTUL  
+	 LXI H,TITLE  
 	 RST 3  
 ;---GET-VALUES------------------------------- 
-	 LXI H,ZNAK  
+	 LXI H,CHAR  
 	 RST 3  
 	 RST 2  
-	 LXI H,GRUBOSC  
+	 LXI H,WEIGHT  
 	 RST 3  
 	 RST 5  
 	 LXI H,ENTER  
 	 RST 3  
 ;---TOP-------------------------------------- 
 	 MOV B,E  
-GORA  
+TOP  
 	 MVI C,80  
-GORA1  
+TOP1  
 	 DCR C  
 	 RST 1  
-	 JNZ GORA1  
+	 JNZ TOP1  
 	 DCR B  
-	 JNZ GORA  
+	 JNZ TOP  
 ;---VERTICAL--------------------------------- 
 	 MVI C,24  
 	 MOV B,E  
@@ -37,40 +37,40 @@ ODEJK0
 	 DCR B  
 	 JNZ ODEJK0  
 ;---PRINT----------------------------------- 
-PION0  
+VER0  
 	 MOV B,E  
-PION1  
+VER1  
 	 DCR B  
 	 RST 1  
-	 JNZ PION1  
-	 LXI H,SPACJA  
+	 JNZ VER1  
+	 LXI H,SPACE  
 	 MOV B,D  
-PION2  
+VER2  
 	 DCR B  
 	 RST 3  
-	 JNZ PION2  
+	 JNZ VER2  
 	 MOV B,E  
-PION3  
+VER3  
 	 DCR B  
 	 RST 1  
-	 JNZ PION3  
+	 JNZ VER3  
 	 DCR C  
-	 JNZ PION0  
+	 JNZ VER0  
 ;---BOTTOM---------------------------------- 
 	 MOV B,E  
-DOL  
+BOTT  
 	 MVI C,80  
-DOL1  
+BOTT1  
 	 DCR C  
 	 RST 1  
-	 JNZ DOL1  
+	 JNZ BOTT1  
 	 DCR B  
-	 JNZ DOL  
+	 JNZ BOTT  
 ;---END------------------------------------- 
 	 HLT  
-TYTUL 	 DB        'Frame generator@' 
-ZNAK 	 DB         13,10,'Enter char: @' 
-GRUBOSC 	 DB      13,10,'Enter weight: @' 
+TITLE 	 DB        'Frame generator@' 
+CHAR 	 DB         13,10,'Enter char: @' 
+WEIGHT 	 DB      13,10,'Enter weight: @' 
 ERR 	 DB          13,10,'You entered wrong weight!@' 
 ENTER 	 DB  13,10,'@' 
-SPACJA 	 DB ' @' 
+SPACE 	 DB ' @' 
