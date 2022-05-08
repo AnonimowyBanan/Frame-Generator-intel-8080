@@ -9,3 +9,5 @@ Next step is enter weight of frame that you want to generate:</br>
 (For example, I putted 3)</br>
 <img width="666" alt="4" src="https://user-images.githubusercontent.com/67584450/167301719-505ea788-e20a-4fb6-b0b8-9bf4c6d44b08.PNG">
 After a few seconds we can see your frame generated! 
+
+That was my first application that I ever made in assembly language :P
