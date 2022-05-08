@@ -7,5 +7,5 @@ At first you have to enter char that you want to be a content of our frame:</br>
 Next step is enter weight of frame that you want to generate:</br>
 <img width="273" alt="3" src="https://user-images.githubusercontent.com/67584450/167301655-81df215c-1cd1-40d5-8926-ad08b805fda3.PNG">
 (For example, I putted 3)</br>
-<img width="425" alt="4" src="https://user-images.githubusercontent.com/67584450/167301719-505ea788-e20a-4fb6-b0b8-9bf4c6d44b08.PNG">
+<img width="666" alt="4" src="https://user-images.githubusercontent.com/67584450/167301719-505ea788-e20a-4fb6-b0b8-9bf4c6d44b08.PNG">
 After a few seconds we can see your frame generated! 
