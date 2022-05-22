@@ -70,7 +70,7 @@ BOTT1
 	 HLT  
 TITLE 	 DB        'Frame generator@' 
 CHAR 	 DB         13,10,'Enter char: @' 
-WEIGHT 	 DB      13,10,'Enter weight: @' 
+WEIGHT 	 DB      13,10,'Enter width: @' 
 ERR 	 DB          13,10,'You entered wrong weight!@' 
 ENTER 	 DB  13,10,'@' 
 SPACE 	 DB ' @' 
